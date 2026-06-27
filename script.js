@@ -1,7 +1,7 @@
 // ================= COUNTDOWN =================
 
 function countdown() {
-    const eventDate = new Date("January 01, 2027 00:00:00").getTime();
+    const eventDate = new Date("March 26, 2027 00:00:00").getTime();
     const now = new Date().getTime();
     const gap = eventDate - now;
 
