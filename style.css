@@ -198,6 +198,21 @@ body {
 .dropdown-menu li:hover {
   background: #e5e7eb;
 }
+
+.coming-soon-tag {
+  display: inline-block !important;
+  background: #fef3c7 !important;
+  color: #d97706 !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  padding: 2px 7px !important;
+  border-radius: 20px !important;
+  margin-left: 6px !important;
+  vertical-align: middle !important;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
 .hero {
   height: 100vh;
   position: relative;
