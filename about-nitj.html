@@ -7,35 +7,28 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    .coming-page {
-      min-height: 82vh;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
+    .nitj-hero {
       background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 50%, #bfdbfe 100%);
-      padding: 120px 20px 80px; text-align: center;
+      padding: 110px 20px 60px;
+      text-align: center;
     }
-    .coming-icon { font-size: 90px; margin-bottom: 24px; animation: float 3s ease-in-out infinite; }
-    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
-    .coming-badge {
+    .nitj-hero .badge {
       display: inline-block; background: #c2410c; color: white;
       font-size: 12px; font-weight: 700; padding: 6px 18px;
-      border-radius: 30px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px;
+      border-radius: 30px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;
     }
-    .coming-page h1 { font-size: 52px; font-weight: 800; color: #0f172a; margin-bottom: 18px; }
-    .coming-page p { font-size: 18px; color: #475569; max-width: 540px; line-height: 1.8; margin-bottom: 16px; }
-    .coming-soon-tag {
-      display: inline-block; background: #fff7ed; color: #c2410c;
-      border: 2px solid #fed7aa; font-size: 14px; font-weight: 700;
-      padding: 8px 24px; border-radius: 30px; letter-spacing: 1px;
-      text-transform: uppercase; margin-bottom: 36px;
+    .nitj-hero h1 { font-size: 46px; font-weight: 800; color: #0f172a; margin-bottom: 14px; }
+    .nitj-hero p.tagline { font-size: 17px; color: #475569; max-width: 640px; margin: 0 auto; line-height: 1.7; }
+    .nitj-stats {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 18px;
+      max-width: 900px; margin: 32px auto 0;
     }
-    .back-btn {
-      display: inline-block; padding: 14px 36px;
-      background: linear-gradient(135deg, #c2410c, #2563eb);
-      color: white; border-radius: 50px; font-weight: 600; font-size: 15px;
-      text-decoration: none; transition: 0.3s ease;
-      box-shadow: 0 8px 24px rgba(194,65,12,0.35);
+    .nitj-stat {
+      background: #ffffff; border-radius: 14px; padding: 18px 28px; min-width: 160px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.07); text-align: center;
     }
-    .back-btn:hover { transform: translateY(-3px); }
+    .nitj-stat .num { font-size: 26px; font-weight: 800; color: #c2410c; }
+    .nitj-stat .label { font-size: 13px; color: #475569; margin-top: 4px; }
   </style>
 </head>
 <body>
@@ -92,14 +85,71 @@
   </div>
 </header>
 
-<div class="coming-page">
-  <div class="coming-icon">🏛️</div>
-  <span class="coming-badge">ATTEND • IIPESS-2027</span>
+<section class="nitj-hero">
+  <span class="badge">ATTEND • IIPESS-2027</span>
   <h1>Explore NIT Jalandhar</h1>
-  <p>A guided look at the NIT Jalandhar campus, facilities, and surroundings for conference attendees will be shared here soon.</p>
-  <div class="coming-soon-tag">🕐 Coming Soon</div>
-  <a href="index.html" class="back-btn">← Back to Home</a>
-</div>
+  <p class="tagline">
+    IIPESS-2027 will be hosted on the green, sprawling campus of Dr. B. R. Ambedkar National
+    Institute of Technology Jalandhar — an Institute of National Importance on the
+    Jalandhar–Amritsar Highway in Punjab, India.
+  </p>
+
+  <div class="nitj-stats">
+    <div class="nitj-stat"><div class="num">1987</div><div class="label">Established (as REC Jalandhar)</div></div>
+    <div class="nitj-stat"><div class="num">2007</div><div class="label">Institute of National Importance</div></div>
+    <div class="nitj-stat"><div class="num">46<sup>th</sup></div><div class="label">NIRF Engineering Rank (2023)</div></div>
+    <div class="nitj-stat"><div class="num">31</div><div class="label">NITs Nationwide (NITJ among them)</div></div>
+  </div>
+</section>
+
+<section class="about-nit">
+  <div class="about-container">
+
+    <h2 style="margin-top:0;">About the Institute</h2>
+    <p align="justify">
+      Dr. B. R. Ambedkar National Institute of Technology Jalandhar is among the 31 NITs established by the
+      Ministry of Education (earlier MHRD), Government of India. The Institute came into existence in 1987
+      (earlier known as Regional Engineering College, Jalandhar) and was conferred the status of
+      <strong>"Institute of National Importance"</strong> by an Act of Parliament in 2007.
+    </p>
+
+    <p align="justify">
+      The institute offers B.Tech., M.Sc., M.Tech., and Ph.D. programmes across a wide range of disciplines,
+      including Biotechnology, Chemical Engineering, Civil Engineering, Computer Science and Engineering,
+      Electrical Engineering, Electronics and Communication Engineering, Industrial and Production Engineering,
+      Information Technology, Instrumentation and Control Engineering, Mechanical Engineering, and Textile
+      Technology.
+    </p>
+
+    <h2>Campus &amp; Surroundings</h2>
+    <p align="justify">
+      The campus sits on a sprawling, green stretch of land along the Jalandhar–Amritsar Highway in Punjab,
+      offering a calm, well-connected setting for conference attendees. Jalandhar itself is centrally located
+      in Punjab, with convenient road and rail links to Amritsar, Chandigarh, and Delhi, making the campus
+      easy to reach for both domestic and international visitors.
+    </p>
+
+    <p align="justify">
+      The institute provides a vibrant academic environment that fosters innovation, critical thinking, and
+      interdisciplinary research, supported by state-of-the-art infrastructure and modern laboratories — many
+      of which conference attendees will get to experience firsthand during IIPESS-2027.
+    </p>
+
+    <h2>Research &amp; Innovation Focus</h2>
+    <p align="justify">
+      With a strong focus on research, innovation, and entrepreneurship, NIT Jalandhar actively contributes to
+      national missions in energy, sustainability, digital transformation, and advanced manufacturing — themes
+      that closely align with the focus areas of IIPESS-2027.
+    </p>
+
+    <div class="note-box" style="background:#eef2ff;border-left:4px solid #2563eb;padding:18px 22px;border-radius:8px;margin-top:20px;">
+      <p><strong>Coming soon:</strong> A detailed visitor guide covering campus map, nearby attractions, local
+      transport, and things to see around Jalandhar and Amritsar will be added here closer to the conference
+      dates.</p>
+    </div>
+
+  </div>
+</section>
 
 <footer class="footer">
   <div class="footer-container">
