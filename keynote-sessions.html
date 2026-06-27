@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Keynote Sessions | IIPESS-2027</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .coming-page {
+      min-height: 80vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #fff7ed 0%, #fde68a 60%, #e9d5ff 100%);
+      padding: 130px 20px 80px; text-align: center;
+    }
+    .coming-icon { font-size: 80px; margin-bottom: 20px; animation: float 3s ease-in-out infinite; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    .coming-badge {
+      display: inline-block; background: #d97706; color: white;
+      font-size: 12px; font-weight: 700; padding: 5px 16px;
+      border-radius: 30px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;
+    }
+    .coming-page h1 { font-size: 46px; font-weight: 800; color: #0f172a; margin-bottom: 16px; }
+    .coming-page > p { font-size: 17px; color: #475569; max-width: 580px; line-height: 1.8; margin-bottom: 50px; }
+    .coming-cards {
+      display: flex; gap: 20px; flex-wrap: wrap;
+      justify-content: center; margin-bottom: 50px; max-width: 780px;
+    }
+    .coming-card {
+      background: white; border-radius: 16px; padding: 28px; width: 220px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: left; transition: 0.3s ease;
+    }
+    .coming-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
+    .coming-card .card-icon { font-size: 34px; margin-bottom: 12px; }
+    .coming-card h3 { font-size: 14px; font-weight: 700; color: #0f172a; margin-bottom: 6px; }
+    .coming-card p { font-size: 13px; color: #6b7280; line-height: 1.6; margin: 0; }
+    .placeholder-speakers {
+      display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-bottom: 50px;
+    }
+    .speaker-card {
+      background: white; border-radius: 20px; padding: 28px 24px; width: 180px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; transition: 0.3s ease;
+    }
+    .speaker-card:hover { transform: translateY(-6px); }
+    .speaker-avatar {
+      width: 72px; height: 72px; border-radius: 50%;
+      background: linear-gradient(135deg, #e9d5ff, #bfdbfe);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 28px; margin: 0 auto 14px;
+    }
+    .speaker-card h3 { font-size: 13px; font-weight: 700; color: #0f172a; margin-bottom: 4px; }
+    .speaker-card p { font-size: 12px; color: #9ca3af; }
+    .tba-tag {
+      display: inline-block; background: #fef3c7; color: #d97706;
+      font-size: 10px; font-weight: 700; padding: 2px 8px;
+      border-radius: 20px; margin-top: 6px; text-transform: uppercase;
+    }
+    .back-btn {
+      display: inline-block; padding: 14px 32px;
+      background: linear-gradient(135deg, #d97706, #7c3aed);
+      color: white; border-radius: 50px; font-weight: 600; font-size: 15px;
+      text-decoration: none; transition: 0.3s ease;
+      box-shadow: 0 8px 20px rgba(217,119,6,0.3);
+    }
+    .back-btn:hover { transform: translateY(-3px); }
+  </style>
+</head>
+<body>
+
+<header class="navbar">
+  <div class="nav-container">
+    <div class="logo-container">
+      <img src="new_logo.png" alt="IIPESS-2027 Logo">
+      <span class="logo-text">IIPESS-2027</span>
+    </div>
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li class="dropdown">
+        <a href="#">ABOUT <span class="arrow">▾</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="overview.html">IIPESS-2027 Overview</a></li>
+          <li><a href="about-nitj.html">About NITJ</a></li>
+          <li><a href="organising.html">Organizing Committee</a></li>
+          <li><a href="advisory-committee.html">Advisory Committee</a></li>
+          <li><a href="technical-committee.html">Technical Programme Committee</a></li>
+          <li><a href="about-ieee.html">About IEEE</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">INFORMATIONS FOR AUTHORS <span class="arrow">▾</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="call_for_papers.html">Call For Papers</a></li>
+          <li><a href="crucial_dates.html">Crucial Dates</a></li>
+          <li><a href="paper_submission.html">Article submission</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">PROGRAMME <span class="arrow">▾</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="technical-sessions.html">Technical Sessions <span class="coming-soon-tag">Coming Soon</span></a></li>
+          <li><a href="keynote-sessions.html">Keynote Sessions <span class="coming-soon-tag">Coming Soon</span></a></li>
+          <li><a href="industry-sessions.html">Industry Sessions <span class="coming-soon-tag">Coming Soon</span></a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="register.html">REGISTRATION</a></li>
+      <li class="dropdown">
+        <a href="#">ATTEND <span class="arrow">▾</span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Accommodation</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Venue</a></li>
+          <li><a href="#">Explore NIT Jalandhar</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a href="sponser.html">SPONSORSHIP AND EXHIBITORS</a></li>
+    </ul>
+  </div>
+</header>
+
+<div class="coming-page">
+  <div class="coming-icon">🎤</div>
+  <span class="coming-badge">PROGRAMME • IIPESS-2027</span>
+  <h1>Keynote Sessions</h1>
+  <p>We are in the process of inviting distinguished speakers from academia and industry. Keynote announcements will be made soon — stay tuned!</p>
+
+  <div class="placeholder-speakers">
+    <div class="speaker-card">
+      <div class="speaker-avatar">👤</div>
+      <h3>Speaker TBA</h3>
+      <p>Eminent Professor / Researcher</p>
+      <span class="tba-tag">To Be Announced</span>
+    </div>
+    <div class="speaker-card">
+      <div class="speaker-avatar">👤</div>
+      <h3>Speaker TBA</h3>
+      <p>Industry Expert / Innovator</p>
+      <span class="tba-tag">To Be Announced</span>
+    </div>
+    <div class="speaker-card">
+      <div class="speaker-avatar">👤</div>
+      <h3>Speaker TBA</h3>
+      <p>International Keynote Speaker</p>
+      <span class="tba-tag">To Be Announced</span>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-btn">← Back to Home</a>
+</div>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-col">
+      <div class="footer-brand"><img src="new_logo.png" width="50"><h3>IIPESS-2027</h3></div>
+      <p>International Conference on Intelligent Power, Energy and Sustainable Systems</p>
+      <p>Organized by the Department of Electrical Engineering<br>Dr. B. R. Ambedkar National Institute of Technology, Jalandhar<br>Punjab, India</p>
+      <p class="credits">Designed by Amanpreet Kaur, Guransh Singh</p>
+    </div>
+    <div class="footer-col">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="overview.html">About the Conference</a></li>
+        <li><a href="tracks.html">Conference Tracks</a></li>
+        <li><a href="register.html">Registration</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h3>Resources</h3>
+      <ul>
+        <li><a href="paper_submission.html">Paper Submission</a></li>
+        <li><a href="author-guidelines.html">Author Guidelines</a></li>
+        <li><a href="review-committee.html">Review Committee</a></li>
+        <li><a href="contact.html">Contact Secretariat</a></li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <div class="footer-bottom">
+    <p>© 2027 IIPESS-2027 Conference. All rights reserved.</p>
+  </div>
+  <hr>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
