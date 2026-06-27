@@ -634,6 +634,7 @@ h2 {
 .date-box.highlight {
   border: 2px solid #c084fc;
     position: sticky;
+    text-align: left;
 }
 
 .red {
