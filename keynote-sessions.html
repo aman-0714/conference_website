@@ -8,65 +8,38 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
     .coming-page {
-      min-height: 80vh;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      min-height: 82vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       background: linear-gradient(135deg, #fff7ed 0%, #fde68a 60%, #e9d5ff 100%);
-      padding: 130px 20px 80px; text-align: center;
+      padding: 120px 20px 80px;
+      text-align: center;
     }
-    .coming-icon { font-size: 80px; margin-bottom: 20px; animation: float 3s ease-in-out infinite; }
-    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-12px)} }
+    .coming-icon { font-size: 90px; margin-bottom: 24px; animation: float 3s ease-in-out infinite; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
     .coming-badge {
       display: inline-block; background: #d97706; color: white;
-      font-size: 12px; font-weight: 700; padding: 5px 16px;
-      border-radius: 30px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 20px;
+      font-size: 12px; font-weight: 700; padding: 6px 18px;
+      border-radius: 30px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px;
     }
-    .coming-page h1 { font-size: 46px; font-weight: 800; color: #0f172a; margin-bottom: 16px; }
-    .coming-page > p { font-size: 17px; color: #475569; max-width: 580px; line-height: 1.8; margin-bottom: 50px; }
-    .coming-cards {
-      display: flex; gap: 20px; flex-wrap: wrap;
-      justify-content: center; margin-bottom: 50px; max-width: 780px;
-    }
-    .coming-card {
-      background: white; border-radius: 16px; padding: 28px; width: 220px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: left; transition: 0.3s ease;
-    }
-    .coming-card:hover { transform: translateY(-6px); box-shadow: 0 20px 40px rgba(0,0,0,0.12); }
-    .coming-card .card-icon { font-size: 34px; margin-bottom: 12px; }
-    .coming-card h3 { font-size: 14px; font-weight: 700; color: #0f172a; margin-bottom: 6px; }
-    .coming-card p { font-size: 13px; color: #6b7280; line-height: 1.6; margin: 0; }
-    .placeholder-speakers {
-      display: flex; gap: 20px; flex-wrap: wrap; justify-content: center; margin-bottom: 50px;
-    }
-    .speaker-card {
-      background: white; border-radius: 20px; padding: 28px 24px; width: 180px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08); text-align: center; transition: 0.3s ease;
-    }
-    .speaker-card:hover { transform: translateY(-6px); }
-    .speaker-avatar {
-      width: 72px; height: 72px; border-radius: 50%;
-      background: linear-gradient(135deg, #e9d5ff, #bfdbfe);
-      display: flex; align-items: center; justify-content: center;
-      font-size: 28px; margin: 0 auto 14px;
-    }
-    .speaker-card h3 { font-size: 13px; font-weight: 700; color: #0f172a; margin-bottom: 4px; }
-    .speaker-card p { font-size: 12px; color: #9ca3af; }
-    .tba-tag {
-      display: inline-block; background: #fef3c7; color: #d97706;
-      font-size: 10px; font-weight: 700; padding: 2px 8px;
-      border-radius: 20px; margin-top: 6px; text-transform: uppercase;
+    .coming-page h1 { font-size: 52px; font-weight: 800; color: #0f172a; margin-bottom: 18px; }
+    .coming-page p {
+      font-size: 18px; color: #475569; max-width: 520px;
+      line-height: 1.8; margin-bottom: 50px;
     }
     .back-btn {
-      display: inline-block; padding: 14px 32px;
+      display: inline-block; padding: 14px 36px;
       background: linear-gradient(135deg, #d97706, #7c3aed);
       color: white; border-radius: 50px; font-weight: 600; font-size: 15px;
       text-decoration: none; transition: 0.3s ease;
-      box-shadow: 0 8px 20px rgba(217,119,6,0.3);
+      box-shadow: 0 8px 24px rgba(217,119,6,0.35);
     }
     .back-btn:hover { transform: translateY(-3px); }
   </style>
 </head>
 <body>
-
 <header class="navbar">
   <div class="nav-container">
     <div class="logo-container">
@@ -123,29 +96,7 @@
   <div class="coming-icon">🎤</div>
   <span class="coming-badge">PROGRAMME • IIPESS-2027</span>
   <h1>Keynote Sessions</h1>
-  <p>We are in the process of inviting distinguished speakers from academia and industry. Keynote announcements will be made soon — stay tuned!</p>
-
-  <div class="placeholder-speakers">
-    <div class="speaker-card">
-      <div class="speaker-avatar">👤</div>
-      <h3>Speaker TBA</h3>
-      <p>Eminent Professor / Researcher</p>
-      <span class="tba-tag">To Be Announced</span>
-    </div>
-    <div class="speaker-card">
-      <div class="speaker-avatar">👤</div>
-      <h3>Speaker TBA</h3>
-      <p>Industry Expert / Innovator</p>
-      <span class="tba-tag">To Be Announced</span>
-    </div>
-    <div class="speaker-card">
-      <div class="speaker-avatar">👤</div>
-      <h3>Speaker TBA</h3>
-      <p>International Keynote Speaker</p>
-      <span class="tba-tag">To Be Announced</span>
-    </div>
-  </div>
-
+  <p>Our distinguished keynote speakers are being confirmed. Announcements will be made shortly — stay tuned!</p>
   <a href="index.html" class="back-btn">← Back to Home</a>
 </div>
 
