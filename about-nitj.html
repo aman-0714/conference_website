@@ -2,10 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About NIT Jalandhar | IIPESS-2027</title>
+  <title>Explore NIT Jalandhar | IIPESS-2027</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    .coming-page {
+      min-height: 82vh;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      background: linear-gradient(135deg, #fff7ed 0%, #fed7aa 50%, #bfdbfe 100%);
+      padding: 120px 20px 80px; text-align: center;
+    }
+    .coming-icon { font-size: 90px; margin-bottom: 24px; animation: float 3s ease-in-out infinite; }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
+    .coming-badge {
+      display: inline-block; background: #c2410c; color: white;
+      font-size: 12px; font-weight: 700; padding: 6px 18px;
+      border-radius: 30px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px;
+    }
+    .coming-page h1 { font-size: 52px; font-weight: 800; color: #0f172a; margin-bottom: 18px; }
+    .coming-page p { font-size: 18px; color: #475569; max-width: 540px; line-height: 1.8; margin-bottom: 16px; }
+    .coming-soon-tag {
+      display: inline-block; background: #fff7ed; color: #c2410c;
+      border: 2px solid #fed7aa; font-size: 14px; font-weight: 700;
+      padding: 8px 24px; border-radius: 30px; letter-spacing: 1px;
+      text-transform: uppercase; margin-bottom: 36px;
+    }
+    .back-btn {
+      display: inline-block; padding: 14px 36px;
+      background: linear-gradient(135deg, #c2410c, #2563eb);
+      color: white; border-radius: 50px; font-weight: 600; font-size: 15px;
+      text-decoration: none; transition: 0.3s ease;
+      box-shadow: 0 8px 24px rgba(194,65,12,0.35);
+    }
+    .back-btn:hover { transform: translateY(-3px); }
+  </style>
 </head>
 <body>
 
@@ -52,6 +83,7 @@
         <ul class="dropdown-menu">
           <li><a href="accommodation.html">Accommodation</a></li>
           <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="venue.html">Venue</a></li>
           <li><a href="about-nitj.html">Explore NIT Jalandhar</a></li>
         </ul>
       </li>
@@ -60,33 +92,14 @@
   </div>
 </header>
 
-<section class="about-nit">
-  <div class="about-container">
-
-    <h1>About NIT Jalandhar</h1>
-
-    <p align="justify">
-      Dr. B. R. Ambedkar National Institute of Technology Jalandhar is among the 31 NITs established by Ministry of Education (earlier MHRD), Govt. of India. The Institute came into existence in the year 1987 (earlier Regional Engineering College, Jalandhar) and obtained the status "Institute of National Importance" by Act of Parliament 2007.
-    </p>
-
-    <p align="justify">
-      The institute is offering B.Tech., M.Sc., M.Tech., and Ph.D. programmes in various disciplines such as Biotechnology, Chemical Engineering, Civil Engineering, Computer Science and Engineering, Electrical Engineering, Electronics and Communication Engineering, Industrial and Production Engineering, Information Technology, Instrumentation and Control Engineering, Mechanical Engineering, Textile Technology, etc.
-    </p>
-
-    <p align="justify">
-      NIT Jalandhar has secured the <strong>46<sup>th</sup> NIRF rank</strong> in the engineering category in 2023.
-    </p>
-
-    <p align="justify">
-      NIT Jalandhar is located on a sprawling and green campus along the Jalandhar–Amritsar Highway in Punjab. The institute provides a vibrant academic environment that fosters innovation, critical thinking, and interdisciplinary research, supported by state-of-the-art infrastructure and modern laboratories.
-    </p>
-
-    <p align="justify">
-      With a strong focus on research, innovation, and entrepreneurship, NIT Jalandhar actively contributes to national missions in energy, sustainability, digital transformation, and advanced manufacturing.
-    </p>
-
-  </div>
-</section>
+<div class="coming-page">
+  <div class="coming-icon">🏛️</div>
+  <span class="coming-badge">ATTEND • IIPESS-2027</span>
+  <h1>Explore NIT Jalandhar</h1>
+  <p>A guided look at the NIT Jalandhar campus, facilities, and surroundings for conference attendees will be shared here soon.</p>
+  <div class="coming-soon-tag">🕐 Coming Soon</div>
+  <a href="index.html" class="back-btn">← Back to Home</a>
+</div>
 
 <footer class="footer">
   <div class="footer-container">
