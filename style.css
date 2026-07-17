@@ -482,6 +482,9 @@ body {
   }
   .organizers-bottom {
     gap: 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
   }
   .org-card.small {
     width: 140px;
