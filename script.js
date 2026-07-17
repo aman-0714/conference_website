@@ -40,10 +40,21 @@ const toggle = document.getElementById("menu-toggle");
 const navMenu = document.getElementById("nav-menu");
 
 if (toggle) {
-    toggle.addEventListener("click", () => {
+    toggle.addEventListener("click", (e) => {
+        e.stopPropagation();
         navMenu.classList.toggle("active");
+        document.body.classList.toggle("menu-open");
     });
 }
+
+document.addEventListener("click", (e) => {
+    if (navMenu && navMenu.classList.contains("active")) {
+        if (!navMenu.contains(e.target) && e.target !== toggle) {
+            navMenu.classList.remove("active");
+            document.body.classList.remove("menu-open");
+        }
+    }
+});
 let slides = document.querySelectorAll(".slide");
 let dots = document.querySelectorAll(".dot");
 
