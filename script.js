@@ -55,6 +55,30 @@ document.addEventListener("click", (e) => {
         }
     }
 });
+
+// ================= MOBILE DROPDOWN (ABOUT, PROGRAMME, etc.) =================
+
+const dropdownParents = document.querySelectorAll(".nav-menu > li.dropdown");
+
+dropdownParents.forEach((li) => {
+    const link = li.querySelector("a");
+    const submenu = li.querySelector(".dropdown-menu");
+
+    if (link && submenu) {
+        link.addEventListener("click", (e) => {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                e.stopPropagation();
+
+                dropdownParents.forEach((other) => {
+                    if (other !== li) other.classList.remove("open");
+                });
+
+                li.classList.toggle("open");
+            }
+        });
+    }
+});
 let slides = document.querySelectorAll(".slide");
 let dots = document.querySelectorAll(".dot");
 

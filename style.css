@@ -797,6 +797,19 @@ h2 {
     display: none;
   }
 
+  .nav-menu > li.dropdown.open > .dropdown-menu {
+    display: block !important;
+  }
+
+  .nav-menu > li.dropdown > a .arrow {
+    display: inline-block;
+    transition: transform 0.2s ease;
+  }
+
+  .nav-menu > li.dropdown.open > a .arrow {
+    transform: rotate(180deg);
+  }
+
   body.menu-open::before {
     content: "";
     position: fixed;
