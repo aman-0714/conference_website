@@ -1526,15 +1526,27 @@ h2 {
 }
 
 .track-icon {
-  width: 48px;
-  height: 48px;
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 22px;
   background: #dbeafe;
   border-radius: 12px;
-  margin-bottom: 16px;
+}
+
+.track-icon svg {
+  width: 22px;
+  height: 22px;
+  color: #2563eb;
+}
+
+.track-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
 }
 
 .track-number {
@@ -1542,11 +1554,10 @@ h2 {
   background: #eef2ff;
   color: #2563eb;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 13px;
   letter-spacing: 0.5px;
-  padding: 5px 14px;
+  padding: 6px 16px;
   border-radius: 20px;
-  margin-bottom: 14px;
 }
 
 .track-card h3 {
