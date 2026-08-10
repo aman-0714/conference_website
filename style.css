@@ -176,9 +176,9 @@ body {
   font-size: 12px;
 }
 
-/* ================= REGISTER NOW BUTTON ================= */
+/* ================= NAVBAR CTA BUTTON (SUBMIT PAPER) ================= */
 
-.register-btn {
+.submit-btn {
   display: inline-block;
   background: linear-gradient(135deg, #2563eb, #1e40af);
   color: #ffffff !important;
@@ -193,7 +193,7 @@ body {
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
 
-.register-btn:hover {
+.submit-btn:hover {
   background: linear-gradient(135deg, #1e40af, #1e3a8a);
   transform: translateY(-2px);
   box-shadow: 0 12px 26px rgba(37, 99, 235, 0.45);
@@ -786,7 +786,7 @@ h2 {
     order: 3;
   }
 
-  .register-btn {
+  .submit-btn {
     order: 2;
     margin-right: 10px;
     padding: 9px 18px;
