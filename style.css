@@ -1359,6 +1359,11 @@ h2 {
   font-size: 13px;
 }
 
+.footer-highlight {
+  color: #ffffff;
+  font-weight: 600;
+}
+
 .footer-bottom .dev {
   margin-top: 5px;
   opacity: 0.8;
