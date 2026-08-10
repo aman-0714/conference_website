@@ -1219,8 +1219,75 @@ h2 {
 /* GRID */
 .footer-container {
   display: grid;
-  grid-template-columns: 1.5fr 1fr 1fr;
-  gap: 60px;
+  grid-template-columns: 1.3fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+@media (max-width: 1100px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* FOOTER ICON LINKS (Downloads / External Links) */
+.footer-col .icon-list {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col .icon-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.footer-col .icon-list .icon {
+  color: #4d8dff;
+  font-size: 14px;
+  line-height: 1.5;
+  flex-shrink: 0;
+}
+
+.footer-col .icon-list a {
+  text-decoration: none;
+  color: #d1d5db;
+  font-size: 14.5px;
+  transition: 0.3s;
+}
+
+.footer-col .icon-list a:hover {
+  color: #4d8dff;
+}
+
+.footer-section-label {
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 600;
+  color: #64748b;
+  margin: 26px 0 14px;
+}
+
+.footer-col .quick-links li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-col .quick-links li::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #4d8dff;
+  flex-shrink: 0;
 }
 
 /* BRAND */
