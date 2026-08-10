@@ -1302,6 +1302,24 @@ h2 {
   margin: 0;
 }
 
+.footer-tagline {
+  display: block;
+  color: #4d8dff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  margin-top: 3px;
+}
+
+.footer-contact {
+  margin: 14px 0;
+}
+
+.footer-contact li span:last-child {
+  line-height: 1.6;
+}
+
 /* TEXT */
 .footer-col p {
   font-size: 14px;
