@@ -176,6 +176,30 @@ body {
   font-size: 12px;
 }
 
+/* ================= REGISTER NOW BUTTON ================= */
+
+.register-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #2563eb, #1e40af);
+  color: #ffffff !important;
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.2px;
+  padding: 11px 26px;
+  border-radius: 8px;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+}
+
+.register-btn:hover {
+  background: linear-gradient(135deg, #1e40af, #1e3a8a);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(37, 99, 235, 0.45);
+  color: #ffffff !important;
+}
+
 /* Dropdown */
 
 .dropdown-menu {
@@ -759,6 +783,14 @@ h2 {
 
   .menu-toggle {
     display: block;
+    order: 3;
+  }
+
+  .register-btn {
+    order: 2;
+    margin-right: 10px;
+    padding: 9px 18px;
+    font-size: 12.5px;
   }
 
   .nav-menu {
