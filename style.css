@@ -154,10 +154,12 @@ body {
   list-style: none;
   gap: 30px;
   align-items: center;
+  flex-wrap: nowrap;
 }
 
 .nav-menu li {
   position: relative;
+  flex-shrink: 0;
 }
 
 .nav-menu a {
@@ -165,6 +167,10 @@ body {
   color: white;
   font-weight: 500;
   font-size: 14px;
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   transition: 0.3s;
 }
 
@@ -820,7 +826,8 @@ h2 {
   }
 
   .nav-menu > li > a {
-    display: block;
+    display: flex;
+    white-space: normal;
     padding: 14px 0;
     font-size: 15px;
     border-bottom: 1px solid rgba(255,255,255,0.08);
