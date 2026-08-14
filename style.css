@@ -1591,6 +1591,7 @@ h2 {
   padding: 32px 28px;
   box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
 .track-card:hover {
@@ -1607,6 +1608,15 @@ h2 {
   justify-content: center;
   background: #ccfbf1;
   border-radius: 12px;
+}
+
+.track-photo {
+  width: calc(100% + 56px);
+  height: 170px;
+  object-fit: cover;
+  border-radius: 18px 18px 0 0;
+  margin: -32px -28px 20px;
+  display: block;
 }
 
 .track-icon svg {
