@@ -29,6 +29,63 @@
     }
     .nitj-stat .num { font-size: 26px; font-weight: 800; color: #c2410c; }
     .nitj-stat .label { font-size: 13px; color: #475569; margin-top: 4px; }
+
+    .nearby-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+      margin: 24px 0 10px;
+    }
+    .nearby-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .nearby-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+    }
+    .nearby-card img {
+      width: 100%;
+      height: 210px;
+      object-fit: cover;
+      display: block;
+    }
+    .nearby-card-body { padding: 20px 24px 24px; }
+    .nearby-dist {
+      display: inline-block;
+      background: #fff7ed;
+      color: #c2410c;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.4px;
+      padding: 4px 14px;
+      border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .nearby-card h3 {
+      font-size: 19px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 8px;
+    }
+    .nearby-card p {
+      font-size: 14.5px;
+      line-height: 1.7;
+      color: #64748b;
+      margin-bottom: 0;
+    }
+    .photo-credit {
+      font-size: 12px;
+      color: #94a3b8;
+      margin-top: 4px;
+    }
+    @media (max-width: 700px) {
+      .nearby-grid { grid-template-columns: 1fr; }
+    }
   </style>
 </head>
 <body>
@@ -144,11 +201,54 @@
       that closely align with the focus areas of IIPESS 2027.
     </p>
 
-    <div class="note-box" style="background:#eef2ff;border-left:4px solid #2563eb;padding:18px 22px;border-radius:8px;margin-top:20px;">
-      <p><strong>Coming soon:</strong> A detailed visitor guide covering campus map, nearby attractions, local
-      transport, and things to see around Jalandhar and Amritsar will be added here closer to the conference
-      dates.</p>
+    <h2>Places to Visit Nearby</h2>
+    <p align="justify">
+      NIT Jalandhar sits close to some of Punjab's most iconic tourist and historical sites, all within a
+      comfortable day-trip distance from the campus. Visitors, students, and participants travelling from
+      outside the region are encouraged to plan a visit to one or more of these landmarks alongside the
+      conference.
+    </p>
+
+    <div class="nearby-grid">
+
+      <div class="nearby-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Temple_of_Amritsar,_Punjab,_India.JPG?width=800" alt="Golden Temple, Amritsar">
+        <div class="nearby-card-body">
+          <span class="nearby-dist">~80 km • ~1.5 hr from campus</span>
+          <h3>Golden Temple, Amritsar</h3>
+          <p>The holiest Sikh shrine, Harmandir Sahib, known for its gold-plated sanctum set amid a sacred pool. Open through the night, with the world's largest free community kitchen (langar) serving thousands daily.</p>
+        </div>
+      </div>
+
+      <div class="nearby-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Jallianwala_Bagh_main_entrance.jpg?width=800" alt="Jallianwala Bagh, Amritsar">
+        <div class="nearby-card-body">
+          <span class="nearby-dist">~80 km • ~1.5 hr from campus</span>
+          <h3>Jallianwala Bagh, Amritsar</h3>
+          <p>A public garden and national memorial marking the site of the 1919 massacre, a defining moment in India's freedom struggle. Preserved bullet-marked walls and a martyrs' well stand within the grounds. Just a short walk from the Golden Temple.</p>
+        </div>
+      </div>
+
+      <div class="nearby-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Attari_Wagah_Border_gate.jpg?width=800" alt="Attari-Wagah Border">
+        <div class="nearby-card-body">
+          <span class="nearby-dist">~110 km • ~2.5 hr from campus</span>
+          <h3>Attari-Wagah Border</h3>
+          <p>India's only road border crossing with Pakistan, famous for its high-energy Beating Retreat ceremony held every evening at sunset, with synchronized drills by the BSF and Pakistan Rangers.</p>
+        </div>
+      </div>
+
+      <div class="nearby-card">
+        <img src="https://commons.wikimedia.org/wiki/Special:FilePath/Templo_Durgiana-Amritsar-India09.JPG?width=800" alt="Durgiana Temple, Amritsar">
+        <div class="nearby-card-body">
+          <span class="nearby-dist">~80 km • ~1.5 hr from campus</span>
+          <h3>Durgiana Temple, Amritsar</h3>
+          <p>A Hindu temple dedicated to Goddess Durga, built in a style closely mirroring the Golden Temple and similarly set within its own sacred water tank. Also known as the "Silver Temple" for its ornate silver-plated doors.</p>
+        </div>
+      </div>
+
     </div>
+    <p class="photo-credit">Photos: Wikimedia Commons contributors, licensed under Creative Commons (CC BY-SA).</p>
 
   </div>
 </section>
