@@ -37,6 +37,7 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-shrink: 0;
 }
 
 .logo-container img {
@@ -50,6 +51,7 @@ body {
   font-size: 22px;
   font-weight: 600;
   color: white;
+  white-space: nowrap;
 }
 
 .hero-center {
