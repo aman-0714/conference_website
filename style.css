@@ -1888,3 +1888,48 @@ h2 {
     justify-content: center;
   }
 }
+
+/* ================= IEEE LOGO IN NAVBAR ================= */
+
+.logo-divider {
+  width: 1px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.35);
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
+.ieee-navbar-logo {
+  height: 30px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 0;
+  background: #ffffff;
+  padding: 3px 6px;
+  flex-shrink: 0;
+}
+
+.ieee-navbar-text {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  color: #ffffff;
+}
+
+@media (max-width: 900px) {
+  .logo-divider {
+    display: none;
+  }
+  .ieee-navbar-logo {
+    height: 24px;
+  }
+  .ieee-navbar-text {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ieee-navbar-text {
+    display: none;
+  }
+}
