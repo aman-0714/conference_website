@@ -143,16 +143,95 @@ body {
 
 /* ================= NAVBAR ================= */
 
+/* ================= TOP INFO BAR ================= */
+
+.top-info-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--color-secondary);
+  color: #ffffff;
+  text-align: center;
+  padding: 7px 16px;
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  z-index: 10002;
+  line-height: 1.4;
+}
+
+.top-info-bar sup {
+  font-size: 0.7em;
+}
+
+@media (max-width: 700px) {
+  .top-info-bar {
+    font-size: 10.5px;
+    padding: 6px 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .top-info-bar {
+    font-size: 9.5px;
+    padding: 5px 8px;
+  }
+}
+
 .navbar {
   position: fixed;
   width: 100%;
-  top: 0;
+  top: 32px;
   background: rgba(10, 20, 35, 0.85);
   backdrop-filter: blur(8px);
   z-index: 9999;
   padding: 15px 5%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    top: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    top: 28px;
+  }
+}
+
+/* ================= LOGO BRAND TEXT BLOCK ================= */
+
+.logo-text-block {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.logo-text-block .logo-text {
+  font-size: 18px;
+}
+
+.logo-subtext {
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.1px;
+  color: #5eead4;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-top: 2px;
+}
+
+@media (max-width: 480px) {
+  .logo-text-block .logo-text {
+    font-size: 15px;
+  }
+  .logo-subtext {
+    font-size: 8.5px;
+  }
 }
 
 .nav-container {
