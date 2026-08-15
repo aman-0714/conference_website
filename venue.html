@@ -7,35 +7,205 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <style>
-    .coming-page {
-      min-height: 82vh;
-      display: flex; flex-direction: column; align-items: center; justify-content: center;
-      background: linear-gradient(135deg, #eff6ff 0%, #bfdbfe 50%, #ddd6fe 100%);
-      padding: 120px 20px 80px; text-align: center;
+    /* ================= VENUE PAGE ================= */
+    .venue-banner {
+      width: 100%;
+      padding: 150px 20px 70px;
+      background: linear-gradient(rgba(15,23,42,0.72), rgba(13,148,136,0.55)),
+                  url("college.png") center/cover no-repeat;
+      text-align: center;
+      color: white;
     }
-    .coming-icon { font-size: 90px; margin-bottom: 24px; animation: float 3s ease-in-out infinite; }
-    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
-    .coming-badge {
-      display: inline-block; background: #2563eb; color: white;
-      font-size: 12px; font-weight: 700; padding: 6px 18px;
-      border-radius: 30px; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 24px;
+    .venue-banner .coming-badge {
+      display: inline-block; background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.4);
+      font-size: 12px; font-weight: 700; padding: 8px 22px;
+      border-radius: 30px; letter-spacing: 2px; text-transform: uppercase;
+      margin-bottom: 22px; backdrop-filter: blur(6px);
     }
-    .coming-page h1 { font-size: 52px; font-weight: 800; color: #0f172a; margin-bottom: 18px; }
-    .coming-page p { font-size: 18px; color: #475569; max-width: 540px; line-height: 1.8; margin-bottom: 16px; }
-    .coming-soon-tag {
-      display: inline-block; background: #fff7ed; color: #c2410c;
-      border: 2px solid #fed7aa; font-size: 14px; font-weight: 700;
-      padding: 8px 24px; border-radius: 30px; letter-spacing: 1px;
-      text-transform: uppercase; margin-bottom: 36px;
+    .venue-banner h1 { font-size: 46px; font-weight: 800; margin-bottom: 14px; }
+    .venue-banner p { font-size: 17px; opacity: 0.92; max-width: 600px; margin: 0 auto; }
+
+    .venue-section {
+      padding: 70px 8% 30px;
+      background: #f8fafc;
     }
-    .back-btn {
-      display: inline-block; padding: 14px 36px;
-      background: linear-gradient(135deg, #2563eb, #7c3aed);
-      color: white; border-radius: 50px; font-weight: 600; font-size: 15px;
-      text-decoration: none; transition: 0.3s ease;
-      box-shadow: 0 8px 24px rgba(37,99,235,0.35);
+
+    .venue-heading {
+      font-size: 36px;
+      font-weight: 800;
+      color: #0f172a;
+      margin-bottom: 6px;
     }
-    .back-btn:hover { transform: translateY(-3px); }
+    .venue-heading-underline {
+      width: 90px; height: 4px; background: #0d9488;
+      border-radius: 4px; margin-bottom: 16px;
+    }
+    .venue-address-line {
+      font-size: 16px; color: #475569; margin-bottom: 40px;
+    }
+
+    .venue-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 32px;
+      align-items: stretch;
+      margin-bottom: 60px;
+    }
+
+    .venue-map-wrap {
+      position: relative;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+      min-height: 420px;
+    }
+    .venue-map-wrap iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 420px;
+      border: 0;
+      display: block;
+    }
+    .venue-map-open {
+      position: absolute;
+      top: 16px; left: 16px;
+      background: white;
+      color: #115e59;
+      font-weight: 700;
+      font-size: 13px;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 2;
+    }
+    .venue-map-open:hover { background: #f0fdfa; }
+
+    .venue-details-card {
+      background: white;
+      border-radius: 20px;
+      padding: 34px 32px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+    }
+    .venue-details-card h3 {
+      font-size: 22px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 18px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    .venue-detail-row { margin-bottom: 20px; }
+    .venue-detail-row:last-child { margin-bottom: 0; }
+    .venue-detail-label {
+      display: block;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      color: #0d9488;
+      margin-bottom: 4px;
+    }
+    .venue-detail-value {
+      font-size: 16px;
+      font-weight: 600;
+      color: #0f172a;
+      line-height: 1.5;
+    }
+
+    .venue-subheading {
+      font-size: 26px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 30px;
+    }
+
+    .reach-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      margin-bottom: 70px;
+    }
+    .reach-card {
+      background: white;
+      border: 1px solid #e5e7eb;
+      border-radius: 16px;
+      padding: 26px 22px;
+      box-shadow: 0 10px 25px rgba(15,23,42,0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .reach-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 35px rgba(15,23,42,0.12);
+    }
+    .reach-icon { font-size: 26px; margin-bottom: 12px; }
+    .reach-card h4 {
+      font-size: 16px; font-weight: 700; color: #0f172a; margin-bottom: 8px;
+    }
+    .reach-card p {
+      font-size: 14px; color: #64748b; line-height: 1.7;
+    }
+
+    .hotels-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      margin-bottom: 40px;
+    }
+    .hotels-card {
+      background: #f0fdfa;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+    .hotels-card h3 {
+      font-size: 22px; font-weight: 700; color: #0f172a; margin-bottom: 18px;
+    }
+    .hotels-card ul { list-style: none; padding: 0; }
+    .hotels-card ul li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 15px; color: #334155; margin-bottom: 14px; line-height: 1.6;
+    }
+    .hotels-card ul li::before {
+      content: "";
+      width: 8px; height: 8px; border-radius: 50%;
+      background: #0d9488; margin-top: 7px; flex-shrink: 0;
+    }
+    .hotels-card .note-box { margin-top: 6px; }
+
+    .campus-highlights {
+      background: white;
+      border-radius: 20px;
+      padding: 32px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.06);
+    }
+    .campus-highlights h3 {
+      font-size: 22px; font-weight: 700; color: #0f172a; margin-bottom: 18px;
+    }
+    .campus-highlights ul { list-style: none; padding: 0; }
+    .campus-highlights ul li {
+      display: flex; align-items: flex-start; gap: 10px;
+      font-size: 15px; color: #334155; margin-bottom: 14px; line-height: 1.6;
+    }
+    .campus-highlights ul li::before {
+      content: "✓";
+      color: #0d9488; font-weight: 800; flex-shrink: 0;
+    }
+
+    @media (max-width: 1000px) {
+      .venue-grid { grid-template-columns: 1fr; }
+      .reach-grid { grid-template-columns: repeat(2, 1fr); }
+      .hotels-section { grid-template-columns: 1fr; }
+      .venue-banner h1 { font-size: 34px; }
+    }
+    @media (max-width: 600px) {
+      .reach-grid { grid-template-columns: 1fr; }
+      .venue-section { padding: 55px 6% 20px; }
+    }
   </style>
 </head>
 <body>
@@ -94,14 +264,124 @@
   </div>
 </header>
 
-<div class="coming-page">
-  <div class="coming-icon">📍</div>
-  <span class="coming-badge">ATTEND • IIPESS 2027</span>
-  <h1>Venue</h1>
-  <p>Venue details, hall map, and directions for IIPESS 2027 will be updated here soon.</p>
-  <div class="coming-soon-tag">🕐 Coming Soon</div>
-  <a href="index.html" class="back-btn">← Back to Home</a>
+<!-- ================= VENUE BANNER ================= -->
+<div class="venue-banner">
+  <span class="coming-badge">IEEE Sponsored • IIPESS 2027 • March 26–28, 2027</span>
+  <h1>Conference Venue</h1>
+  <p>Dr. B. R. Ambedkar National Institute of Technology, Jalandhar, Punjab, India</p>
 </div>
+
+<!-- ================= VENUE DETAILS SECTION ================= -->
+<section class="venue-section">
+
+  <h2 class="venue-heading">Dr. B. R. Ambedkar National Institute of Technology, Jalandhar</h2>
+  <div class="venue-heading-underline"></div>
+  <p class="venue-address-line">Department of Electrical Engineering &nbsp;•&nbsp; G.T. Road, Amritsar Bypass, Jalandhar, Punjab – 144011, India</p>
+
+  <div class="venue-grid">
+
+    <div class="venue-map-wrap">
+      <a class="venue-map-open" href="https://www.google.com/maps/search/?api=1&query=NIT+Jalandhar+GT+Road+Amritsar+Bypass" target="_blank" rel="noopener">↗ Open in Maps</a>
+      <iframe
+        src="https://www.google.com/maps?q=Dr.+B.R.+Ambedkar+National+Institute+of+Technology+Jalandhar&output=embed"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <div class="venue-details-card">
+      <h3>Venue Details</h3>
+
+      <div class="venue-detail-row">
+        <span class="venue-detail-label">Venue</span>
+        <span class="venue-detail-value">Dr. B. R. Ambedkar National Institute of Technology, Jalandhar (Dept. of Electrical Engineering)</span>
+      </div>
+
+      <div class="venue-detail-row">
+        <span class="venue-detail-label">City</span>
+        <span class="venue-detail-value">Jalandhar</span>
+      </div>
+
+      <div class="venue-detail-row">
+        <span class="venue-detail-label">State</span>
+        <span class="venue-detail-value">Punjab</span>
+      </div>
+
+      <div class="venue-detail-row">
+        <span class="venue-detail-label">Country</span>
+        <span class="venue-detail-value">India</span>
+      </div>
+
+      <div class="venue-detail-row">
+        <span class="venue-detail-label">PIN</span>
+        <span class="venue-detail-value">144011</span>
+      </div>
+
+      <div class="venue-detail-row">
+        <span class="venue-detail-label">Conference Dates</span>
+        <span class="venue-detail-value">March 26 – 28, 2027</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ================= HOW TO REACH ================= -->
+  <h3 class="venue-subheading">How to Reach</h3>
+
+  <div class="reach-grid">
+    <div class="reach-card">
+      <div class="reach-icon">✈️</div>
+      <h4>By Air</h4>
+      <p>Nearest airport is Sri Guru Ram Dass Jee International Airport, Amritsar (~80 km from campus). Prepaid taxis and app-cabs are available to NIT Jalandhar.</p>
+    </div>
+    <div class="reach-card">
+      <div class="reach-icon">🚆</div>
+      <h4>By Train</h4>
+      <p>Jalandhar City Railway Station is ~12 km and Jalandhar Cantt Railway Station is ~18 km from campus. Autos, cabs and buses are readily available.</p>
+    </div>
+    <div class="reach-card">
+      <div class="reach-icon">🚌</div>
+      <h4>By Bus</h4>
+      <p>Jalandhar ISBT (bus stand) is ~15 km from the institute, with interstate bus services connecting major cities of Punjab and neighbouring states.</p>
+    </div>
+    <div class="reach-card">
+      <div class="reach-icon">🚗</div>
+      <h4>By Road</h4>
+      <p>NIT Jalandhar sits on the G.T. Road (NH-1), Amritsar Bypass, well connected by road to Delhi, Chandigarh and Amritsar.</p>
+    </div>
+  </div>
+
+  <!-- ================= HOTELS + CAMPUS INFO ================= -->
+  <div class="hotels-section">
+
+    <div class="hotels-card">
+      <h3>Nearby Hotels</h3>
+      <ul>
+        <li>Golden Tulip Jalandhar (GT Bypass Road, ~10 min from railway station)</li>
+        <li>WJ Grand Hotel, GT Road, Maqsudan</li>
+        <li>Best Western Plus Jalandhar</li>
+        <li>Park Inn by Radisson Jalandhar</li>
+        <li>Ramada by Wyndham Jalandhar City Centre</li>
+      </ul>
+      <div class="note-box">
+        <p>Visit the <a class="link" href="accommodation.html">Accommodation</a> page for group booking rates and on-campus stay options for delegates.</p>
+      </div>
+    </div>
+
+    <div class="campus-highlights">
+      <h3>Getting Around Campus</h3>
+      <ul>
+        <li>Located a half-km walk from the Bidhipur railway crossing on the GT Road bypass</li>
+        <li>Well-marked entrance and internal roads connecting the venue, guest houses and hostels</li>
+        <li>On-campus signage and volunteer help desks during the conference days</li>
+        <li>Registration desk and technical session halls within the Department of Electrical Engineering</li>
+      </ul>
+    </div>
+
+  </div>
+
+</section>
 
 <footer class="footer">
   <div class="footer-container">
@@ -125,7 +405,7 @@
         </li>
         <li>
           <span class="icon">✉</span>
-          <span>Email: to be announced</span>
+          <span>Email: iipess2027@gmail.com</span>
         </li>
         <li>
           <span class="icon">✉</span>
