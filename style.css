@@ -151,6 +151,8 @@ body {
   backdrop-filter: blur(8px);
   z-index: 9999;
   padding: 15px 5%;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
 }
 
 .nav-container {
@@ -172,15 +174,7 @@ body {
   gap: 22px;
   align-items: center;
   flex-wrap: nowrap;
-  flex: 1;
-  min-width: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
-  -ms-overflow-style: none;
-}
-
-.nav-menu::-webkit-scrollbar {
-  display: none;
+  justify-content: flex-end;
 }
 
 .nav-menu li {
@@ -301,10 +295,10 @@ body {
   z-index: 2;
   color: white;
   text-align: center;
-  top: 40%;
+  top: 44%;
   transform: translateY(-50%);
   width: 100%;
-  padding: 0 20px;
+  padding: 90px 20px 0;
   max-width: 100%;
   box-sizing: border-box;
 }
