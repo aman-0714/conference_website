@@ -28,6 +28,22 @@ body {
     line-height: 1.6;
 }
 
+/* ================= SITE-WIDE JUSTIFIED TEXT ================= */
+/* Justifies the actual body-copy paragraphs across every page (about,
+   overview, committee, tracks, notes, welcome message, etc.) while leaving
+   intentionally centered text alone (hero subtitle, banners, CTA blurbs,
+   badges, footer address, nav links, buttons). */
+.about-nit p,
+.about-container p,
+.intro-text,
+.welcome-message p,
+.cmt-acknowledgement,
+.note-box p,
+.track-card p,
+.overview-content p {
+  text-align: justify;
+}
+
 .container {
     width: 90%;
     margin: auto;
@@ -187,7 +203,7 @@ body {
   background: rgba(10, 20, 35, 0.85);
   backdrop-filter: blur(8px);
   z-index: 9999;
-  padding: 15px 5%;
+  padding: 15px 2.5%;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   transition: top 0.15s ease;
@@ -252,7 +268,7 @@ body {
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 22px;
+  gap: 16px;
   align-items: center;
   flex-wrap: nowrap;
   justify-content: flex-end;
@@ -267,7 +283,7 @@ body {
   text-decoration: none;
   color: white;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 13px;
   white-space: nowrap;
   display: inline-flex;
   align-items: center;
@@ -290,12 +306,13 @@ body {
   background: linear-gradient(135deg, #0d9488, #115e59);
   color: #ffffff !important;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 13px;
   letter-spacing: 0.2px;
-  padding: 11px 26px;
+  padding: 10px 20px;
   border-radius: 8px;
   text-decoration: none;
   white-space: nowrap;
+  flex-shrink: 0;
   box-shadow: 0 8px 20px rgba(13, 148, 136, 0.35);
   transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
 }
@@ -897,7 +914,7 @@ h2 {
   cursor: pointer;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1300px) {
 
   .menu-toggle {
     display: block;
