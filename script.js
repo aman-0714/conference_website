@@ -1,3 +1,22 @@
+// ================= DYNAMIC HEADER SPACING =================
+// Keeps the navbar positioned correctly below the top info bar,
+// even if the info bar text wraps to 2 lines on smaller screens.
+
+function adjustHeaderOffsets() {
+    const topBar = document.querySelector(".top-info-bar");
+    const navbar = document.querySelector(".navbar");
+    if (!topBar || !navbar) return;
+
+    const topBarHeight = topBar.offsetHeight;
+    navbar.style.top = topBarHeight + "px";
+
+    const totalHeaderHeight = topBarHeight + navbar.offsetHeight;
+    document.documentElement.style.setProperty("--header-height", totalHeaderHeight + "px");
+}
+
+window.addEventListener("load", adjustHeaderOffsets);
+window.addEventListener("resize", adjustHeaderOffsets);
+
 // ================= COUNTDOWN =================
 
 function countdown() {
