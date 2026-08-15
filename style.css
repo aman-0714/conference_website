@@ -1841,6 +1841,34 @@ h2 {
   box-shadow: 0 0 8px rgba(244, 63, 94, 0.9);
 }
 
+/* ================= IEEE TAG (HERO HEADING) ================= */
+.ieee-tag {
+  display: inline-block;
+  background: linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-amber));
+  color: #1a1200;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 0.55em;
+  letter-spacing: 2px;
+  padding: 4px 14px;
+  border-radius: 8px;
+  vertical-align: middle;
+  margin-right: 10px;
+  box-shadow: 0 3px 10px rgba(245, 158, 11, 0.45);
+  text-shadow: none;
+  position: relative;
+  top: -3px;
+}
+
+@media (max-width: 768px) {
+  .ieee-tag {
+    font-size: 0.5em;
+    padding: 3px 10px;
+    margin-right: 6px;
+    top: -2px;
+  }
+}
+
 @keyframes heroBadgePulse {
   0%, 100% {
     transform: scale(1);
