@@ -7,10 +7,11 @@ function adjustHeaderOffsets() {
     const navbar = document.querySelector(".navbar");
     if (!topBar || !navbar) return;
 
+    const gap = 10; // visible space between blue info bar and navbar
     const topBarHeight = topBar.offsetHeight;
-    navbar.style.top = topBarHeight + "px";
+    navbar.style.top = (topBarHeight + gap) + "px";
 
-    const totalHeaderHeight = topBarHeight + navbar.offsetHeight;
+    const totalHeaderHeight = topBarHeight + gap + navbar.offsetHeight;
     document.documentElement.style.setProperty("--header-height", totalHeaderHeight + "px");
 }
 
