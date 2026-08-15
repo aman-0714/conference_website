@@ -2156,3 +2156,167 @@ h2 {
     display: none;
   }
 }
+
+/* ================= SITE-WIDE MOBILE POLISH ================= */
+/* Tightens spacing, type scale, and layout across every shared section
+   (footer, news, organizers, welcome, about, tracks, dates, etc.) so the
+   whole conference site reads cleanly on phones, not just the hero. */
+
+@media (max-width: 768px) {
+
+  /* ---- Section padding: desktop paddings (80-100px, 8%) are too heavy
+     for phones and push content off-screen without adding real value ---- */
+  .organizers-section,
+  .welcome-section,
+  .main-section,
+  .about-section,
+  .submit-cta,
+  .overview-section,
+  .about-nit {
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .about-nit {
+    padding-top: 120px; /* keep clear of the fixed navbar */
+  }
+
+  /* ---- Headings: scale down the big desktop numbers ---- */
+  .organizers-heading,
+  .welcome-heading,
+  .about-heading,
+  h2 {
+    font-size: 28px !important;
+  }
+
+  .organizers-heading { letter-spacing: 1px; }
+
+  /* ---- Organizers / welcome message ---- */
+  .welcome-message {
+    padding: 24px;
+    font-size: 15px;
+  }
+
+  .org-card.large {
+    padding: 20px;
+  }
+
+  .org-content h3 {
+    font-size: 20px;
+  }
+
+  /* ---- Key dates card ---- */
+  .key-dates {
+    padding: 22px;
+  }
+
+  /* ---- News section ---- */
+  .news-section {
+    padding: 40px 6%;
+  }
+
+  .left h1 {
+    font-size: 32px;
+  }
+
+  .news-box {
+    height: 260px;
+  }
+
+  /* ---- Tracks ---- */
+  .track-card {
+    padding: 22px 20px;
+  }
+
+  .track-photo {
+    width: calc(100% + 40px);
+    margin: -22px -20px 16px;
+    height: 140px;
+  }
+
+  /* ---- Important dates cards ---- */
+  .date-card {
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .dates-container {
+    gap: 14px;
+  }
+
+  /* ---- Chairs / welcome cards stack tighter ---- */
+  .chair-card img {
+    width: 80px;
+    height: 80px;
+  }
+
+  /* ---- Footer ---- */
+  .footer {
+    padding: 40px 6%;
+  }
+
+  .footer-brand {
+    flex-wrap: wrap;
+  }
+
+  .credits {
+    font-size: 14px;
+  }
+
+  /* ---- Generic content containers used on inner pages
+     (organising.html, contact.html, register.html, etc.) ---- */
+  .container {
+    width: 94%;
+  }
+
+  .about-container {
+    padding: 0 4%;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .organizers-heading,
+  .welcome-heading,
+  .about-heading,
+  h2 {
+    font-size: 24px !important;
+  }
+
+  .left h1 {
+    font-size: 26px;
+  }
+
+  .welcome-message {
+    padding: 18px;
+    font-size: 14px;
+  }
+
+  .org-card.large {
+    padding: 16px;
+  }
+
+  .org-card.large img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .footer {
+    padding: 32px 5%;
+  }
+
+  .footer-col h3 {
+    font-size: 17px;
+  }
+
+  .track-card h3 {
+    font-size: 17px;
+  }
+
+  .submit-cta h2,
+  .submit-cta-buttons {
+    padding: 0 4px;
+  }
+}
