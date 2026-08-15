@@ -38,6 +38,7 @@ body {
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+  margin-right: 10px;
 }
 
 .logo-container img {
@@ -156,6 +157,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
 }
 
 .logo {
@@ -167,9 +169,18 @@ body {
 .nav-menu {
   display: flex;
   list-style: none;
-  gap: 30px;
+  gap: 22px;
   align-items: center;
   flex-wrap: nowrap;
+  flex: 1;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.nav-menu::-webkit-scrollbar {
+  display: none;
 }
 
 .nav-menu li {
