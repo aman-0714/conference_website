@@ -1,0 +1,20 @@
+// ================= INDEPENDENCE DAY SPECIAL BADGE =================
+// Temporary logo for Independence Day week. Safe to delete this file
+// (and its <script> tag in index.html) any time after the week is over.
+
+document.addEventListener("DOMContentLoaded", function () {
+  var img = document.createElement("img");
+  img.id = "independence_day_logo";
+  img.alt = "Independence Day Special - IIPESS 2027";
+  img.src = "data:image/png;base64,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";
+  img.style.width = "130px";
+  img.style.height = "auto";
+  img.style.marginBottom = "14px";
+  img.style.borderRadius = "50%";
+  img.style.filter = "drop-shadow(0 8px 20px rgba(0,0,0,0.35))";
+
+  var heroContent = document.querySelector(".hero-content");
+  if (heroContent) {
+    heroContent.insertBefore(img, heroContent.firstChild);
+  }
+});
