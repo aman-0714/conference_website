@@ -1153,6 +1153,17 @@ h2 {
 
 /* DATES */
 
+.dates-section {
+  padding: 150px 8% 80px;
+  background: #f8fafc;
+  text-align: center;
+}
+
+.dates-section .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
 .dates-container {
     display: flex;
     gap: 20px;
