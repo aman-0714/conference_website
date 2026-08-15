@@ -7,16 +7,17 @@ function adjustHeaderOffsets() {
     const navbar = document.querySelector(".navbar");
     if (!topBar || !navbar) return;
 
-    const gap = 10; // visible space between blue info bar and navbar
     const topBarHeight = topBar.offsetHeight;
-    navbar.style.top = (topBarHeight + gap) + "px";
+    navbar.style.top = topBarHeight + "px";
 
-    const totalHeaderHeight = topBarHeight + gap + navbar.offsetHeight;
+    const totalHeaderHeight = topBarHeight + navbar.offsetHeight;
     document.documentElement.style.setProperty("--header-height", totalHeaderHeight + "px");
 }
 
 window.addEventListener("load", adjustHeaderOffsets);
 window.addEventListener("resize", adjustHeaderOffsets);
+document.addEventListener("DOMContentLoaded", adjustHeaderOffsets);
+adjustHeaderOffsets(); // run immediately too, since this script is at the bottom of <body>
 
 // ================= COUNTDOWN =================
 

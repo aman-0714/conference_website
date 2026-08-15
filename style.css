@@ -8,6 +8,7 @@
   --color-accent-amber: #f59e0b;    /* amber */
   --color-accent-rose: #f43f5e;     /* rose — deadlines/alerts */
   --color-navy: #0f172a;
+  --header-height: 120px; /* fallback until script.js measures the real navbar height */
 }
 
 * {
@@ -375,10 +376,8 @@ body {
   z-index: 2;
   color: white;
   text-align: center;
-  top: 44%;
-  transform: translateY(-50%);
   width: 100%;
-  padding: 90px 20px 0;
+  padding: 0 20px;
   max-width: 100%;
   box-sizing: border-box;
 }
@@ -850,9 +849,6 @@ h2 {
 }
 /* Mobile hero text tuning */
 @media (max-width: 600px) {
-  .hero-content {
-    padding-top: 100px;
-  }
   .hero-logo {
     width: 120px;
     height: 120px;
@@ -986,8 +982,9 @@ h2 {
     color: white;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     text-align: center;
+    overflow: hidden;
 }
 
 .overlay {
@@ -1000,7 +997,10 @@ h2 {
 .hero-content {
     position: relative;
     z-index: 2;
-    padding-top: 140px;
+    /* Always clears the fixed top-info-bar + navbar (--header-height is kept
+       up to date by adjustHeaderOffsets() in script.js), plus a 16px buffer
+       so the hero logo never touches or enters the navbar. */
+    padding-top: calc(var(--header-height, 120px) + 16px);
 }
 
 .hero h2 {
