@@ -2030,4 +2030,7 @@ h2 {
   .ieee-navbar-text {
     display: none;
   }
+  .ieee-navbar-logo {
+    display: none;
+  }
 }
